@@ -1,0 +1,56 @@
+import "./ProjectDetails.css";
+
+function ProjectDetails({ project }) {
+    return (
+        <div className="project-details">
+
+            <div className="project-details__preview">
+                Aperçu du projet
+            </div>
+
+            <p className="project-details__description">
+                {project.description}
+            </p>
+
+            <div className="project-details__technologies">
+
+                {project.technologies.map((technology) => (
+                    <span
+                        key={technology}
+                        className="project-details__technology"
+                    >
+                        {technology}
+                    </span>
+                ))}
+
+            </div>
+
+            <div className="project-details__actions">
+
+                {project.github && (
+                    <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        GitHub
+                    </a>
+                )}
+
+                {project.website && (
+                    <a
+                        href={project.website}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Voir le site
+                    </a>
+                )}
+
+            </div>
+
+        </div>
+    );
+}
+
+export default ProjectDetails;
