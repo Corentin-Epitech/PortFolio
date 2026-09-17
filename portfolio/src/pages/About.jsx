@@ -1,6 +1,7 @@
 import "./About.css";
 
 import RPGWindow from "../components/ui/RPGWindows";
+import stats from "../data/stats";
 
 function About() {
     return (
@@ -61,21 +62,27 @@ function About() {
                 </RPGWindow>
 
 
-                <RPGWindow title="Intérêts">
-                    <div className="about__interests">
+                <RPGWindow title="Statistiques">
 
-                        <div className="about__interest">
-                            <span>🎮</span>
-                            <p>Jeux vidéo</p>
-                        </div>
+                    <div className="about__stats">
 
-                        <div className="about__interest">
-                            <span>💻</span>
-                            <p>Développement</p>
-                        </div>
+                        {stats.map((stat) => (
+                            <div
+                                key={stat.id}
+                                className="about__stat"
+                            >
+                                <span className="about__stat-name">
+                                    {stat.name}
+                                </span>
 
+                                <span className="about__stat-value">
+                                    {String(stat.value).padStart(2, "0")}
+                                </span>
+                            </div>
+                        ))}
 
                     </div>
+
                 </RPGWindow>
 
 
