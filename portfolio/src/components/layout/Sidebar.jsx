@@ -1,6 +1,12 @@
 import "./Sidebar.css";
+import { calculateAge, calculateExperience } from "../../utils/PlayerStats";
 
 function Sidebar({ currentPage, setCurrentPage }) {
+
+    const birthDate = new Date(2000, 0, 4);
+    const level = calculateAge(birthDate);
+    const experience = calculateExperience(birthDate);
+
     return (
         <div className="sidebar">
 
@@ -14,7 +20,21 @@ function Sidebar({ currentPage, setCurrentPage }) {
                 </p>
 
                 <div className="sidebar__level">
-                    LV. 26
+                    LV. {level}
+                </div>
+                <div className="sidebar__experience">
+
+                    <span>EXP</span>
+
+                    <div className="sidebar__experience-bar">
+                        <div
+                            className="sidebar__experience-fill"
+                            style={{
+                                width: `${experience}%`,
+                            }}
+                        />
+                    </div>
+
                 </div>
 
                 <div className="sidebar__stats">

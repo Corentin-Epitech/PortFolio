@@ -11,7 +11,7 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 
 function App() {
-    const [currentPage, setCurrentPage] = useState("Home");
+    const [currentPage, setCurrentPage] = useState("home");
 
     function renderPage() {
         switch (currentPage) {
