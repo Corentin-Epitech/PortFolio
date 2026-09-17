@@ -1,0 +1,17 @@
+body {
+    min-width: 320px;
+    min-height: 100vh;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+}
+
+button {
+    font-family: inherit;
+}
+
+.page-title {
+    font-family: var(--font-rpg);
+    font-size: 32px;
+    font-weight: 400;
+}

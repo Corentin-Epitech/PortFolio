@@ -7,7 +7,7 @@ function Skills() {
     return (
         <div className="skills">
 
-            <h1>Équipement</h1>
+            <h1 className="page-title">Équipement</h1>
 
             <RPGWindow title="Arsenal Technique">
 

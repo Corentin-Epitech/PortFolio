@@ -102,17 +102,21 @@
     border-bottom: none;
 }
 
+.about__stat-name,
+.about__stat-value {
+    font-family: var(--font-rpg);
+}
+
 .about__stat-name {
     color: #d8e2ff;
 }
 
 .about__stat-value {
-    min-width: 35px;
+    min-width: 45px;
 
-    color: white;
+    font-size: var(--font-size-rpg-large);
 
     text-align: right;
-    font-size: 18px;
 }
 
 .about__objective {
