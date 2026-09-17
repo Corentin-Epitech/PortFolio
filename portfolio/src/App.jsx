@@ -1,22 +1,10 @@
 import MainLayout from "./components/layout/MainLayout";
-
+import Sidebar
+ from "./components/layout/Sidebar";
 function App() {
     return (
         <MainLayout
-            sidebar={
-                <div>
-                    <h2>Corentin</h2>
-                    <p>Développeur Web</p>
-
-                    <hr />
-
-                    <p>Accueil</p>
-                    <p>À propos</p>
-                    <p>Compétences</p>
-                    <p>Projets</p>
-                    <p>Expérience</p>
-                    <p>Contact</p>
-                </div>
+            sidebar={<Sidebar />
             }
         >
             <h1>Accueil</h1>
