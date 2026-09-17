@@ -26,8 +26,9 @@
 .rpg-window__title {
     margin: 0;
 
-    font-size: 20px;
-    font-weight: normal;
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-rpg-title);
+    font-weight: 400;
 }
 
 .rpg-window__content {

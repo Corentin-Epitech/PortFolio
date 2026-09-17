@@ -69,7 +69,7 @@
 
     border: 1px solid #718bd0;
 
-    font: inherit;
+    font-family: var(--font-rpg);
 
     cursor: pointer;
 }

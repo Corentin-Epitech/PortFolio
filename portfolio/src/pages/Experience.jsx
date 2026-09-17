@@ -9,7 +9,7 @@ function Experience() {
     return (
         <div className="experience">
 
-            <h1>Expérience</h1>
+            <h1 className="page-title">Expérience</h1>
 
             <RPGWindow title="Parcours">
 

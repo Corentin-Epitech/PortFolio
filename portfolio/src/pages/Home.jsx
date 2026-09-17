@@ -7,6 +7,8 @@ function Home({ setCurrentPage }) {
 
     const featuredProject = projects[0];
     return (
+
+
         <div className="home">
 
             <section className="home__hero">
@@ -112,7 +114,11 @@ function Home({ setCurrentPage }) {
             </div>
 
         </div>
+
+
     );
+
+
 }
 
 export default Home;

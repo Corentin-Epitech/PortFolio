@@ -15,7 +15,7 @@ function Projects() {
     return (
         <div className="projects">
 
-            <h1>Projets</h1>
+            <h1 className="page-title">Projets</h1>
 
             <div className="projects__layout">
 

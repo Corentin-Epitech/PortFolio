@@ -23,6 +23,7 @@
 
     color: #b8c4df;
 
+    font-family: var(--font-rpg);
     font-size: 16px;
     font-weight: normal;
 
@@ -32,6 +33,8 @@
 .skills__items {
     display: flex;
     flex-direction: column;
+
+    font-family: var(--font-rpg);
 
     gap: 6px;
 }
