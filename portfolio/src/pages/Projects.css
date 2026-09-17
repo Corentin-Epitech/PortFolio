@@ -1,0 +1,47 @@
+.projects {
+    width: 100%;
+}
+
+.projects__layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+
+    gap: 20px;
+}
+
+.projects__list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.projects__item {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: none;
+
+    background: transparent;
+    color: white;
+
+    text-align: left;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.projects__item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.projects__item--active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.projects__item--active::before {
+    content: "▶";
+
+    margin-right: 10px;
+}
