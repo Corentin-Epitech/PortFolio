@@ -32,7 +32,7 @@ function App() {
 
             case "home":
             default:
-                return <Home />;
+                    return <Home setCurrentPage={setCurrentPage} />;
         }
     }
 
