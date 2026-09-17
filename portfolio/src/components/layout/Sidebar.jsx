@@ -1,6 +1,6 @@
 import "./Sidebar.css";
 
-function Sidebar() {
+function Sidebar({ currentPage, setCurrentPage }) {
     return (
         <div className="sidebar">
 
@@ -37,27 +37,43 @@ function Sidebar() {
             </div>
 
             <nav className="sidebar__navigation">
-                <button className="sidebar__menu-item sidebar__menu-item--active">
+                <button className={`sidebar__menu-item ${currentPage === "home"
+                    ? "sidebar__menu-item--active"
+                    : ""
+                    }`}
+                    onClick={() => setCurrentPage("home")}>
                     Accueil
                 </button>
 
-                <button className="sidebar__menu-item">
+                <button className={`sidebar__menu-item ${currentPage === "about" ? "sidebar__menu-item--active" : ""
+                    }`}
+                    onClick={() => setCurrentPage("about")}>
                     À propos
                 </button>
 
-                <button className="sidebar__menu-item">
+                <button className={`sidebar__menu-item ${currentPage === "skills"
+                    ? "sidebar__menu-item--active"
+                    : ""
+                    }`}
+                    onClick={() => setCurrentPage("skills")}>
                     Compétences
                 </button>
 
-                <button className="sidebar__menu-item">
+                <button className={`sidebar__menu-item ${currentPage === "projects" ? "sidebar__menu-item--active" : ""
+                    }`}
+                    onClick={() => setCurrentPage("projects")}>
                     Projets
                 </button>
 
-                <button className="sidebar__menu-item">
+                <button className={`sidebar__menu-item ${currentPage === "experience" ? "sidebar__menu-item--active" : ""
+                    }`}
+                    onClick={() => setCurrentPage("experience")}>
                     Expérience
                 </button>
 
-                <button className="sidebar__menu-item">
+                <button className={`sidebar__menu-item ${currentPage === "contact" ? "sidebar__menu-item--active" : ""
+                    }`}
+                    onClick={() => setCurrentPage("contact")}>
                     Contact
                 </button>
             </nav>
