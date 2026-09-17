@@ -81,34 +81,38 @@
     margin-bottom: 0;
 }
 
-.about__interests {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
+.about__stats {
+    display: flex;
+    flex-direction: column;
 
     gap: 10px;
 }
 
-.about__interest {
-    padding: 15px 10px;
+.about__stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    background-color: #101c4d;
+    padding: 8px 10px;
 
-    border: 1px solid #526aa8;
-
-    text-align: center;
+    border-bottom: 1px solid #526aa8;
 }
 
-.about__interest span {
-    display: block;
-
-    margin-bottom: 8px;
-
-    font-size: 24px;
+.about__stat:last-child {
+    border-bottom: none;
 }
 
-.about__interest p {
-    margin: 0;
+.about__stat-name {
+    color: #d8e2ff;
+}
+
+.about__stat-value {
+    min-width: 35px;
+
+    color: white;
+
+    text-align: right;
+    font-size: 18px;
 }
 
 .about__objective {
