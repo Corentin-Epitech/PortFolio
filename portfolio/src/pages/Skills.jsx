@@ -1,54 +1,51 @@
 import "./Skills.css"
 
 import RPGWindow from "../components/ui/RPGWindows";
-import StatBar from "../components/ui/StatBar";
+import equipment from "../data/skills";
 
 function Skills() {
     return (
-        <div>
-            <h1>Compétences</h1>
-            <div className="skills__grid">
-            <RPGWindow title="Frontend">
-                <div className="skills__stats">
-                    <StatBar label="HTML / CSS" value={60} />
-                    <StatBar label="Javascript" value={80} />
-                    <StatBar label="React" value={45} />
+        <div className="skills">
+
+            <h1>Équipement</h1>
+
+            <RPGWindow title="Arsenal Technique">
+
+                <div className="skills__grid">
+
+                    {equipment.map((group) => (
+                        <div
+                            key={group.id}
+                            className="skills__category"
+                        >
+
+                            <h2 className="skills__category-title">
+                                {group.category}
+                            </h2>
+
+                            <div className="skills__items">
+
+                                {group.items.map((item) => (
+                                    <div
+                                        key={item}
+                                        className="skills__item"
+                                    >
+                                        {item}
+                                    </div>
+                                ))}
+
+                            </div>
+
+                        </div>
+                    ))}
+
                 </div>
+
             </RPGWindow>
-            <RPGWindow title="Backend">
-                <div className="skills__stats">
 
-                        <StatBar label="PHP" value={85} />
-
-                        <StatBar label="Symfony" value={80} />
-
-                        <StatBar label="Node.js" value={70} />
-
-                    </div>
-            </RPGWindow>
-            <RPGWindow title="Base de données">
-                    <div className="skills__stats">
-
-                        <StatBar label="PostgreSQL" value={80} />
-
-                        <StatBar label="MySQL" value={80} />
-
-                    </div>
-                </RPGWindow>
-            <RPGWindow title="DevOps">
-                <div className="skills__stats">
-
-                        <StatBar label="Docker" value={75} />
-
-                        <StatBar label="Git" value={85} />
-
-
-
-                    </div>
-            </RPGWindow>
-            </div>
         </div>
     );
 }
+
 
 export default Skills;
