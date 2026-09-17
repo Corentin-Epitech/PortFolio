@@ -1,0 +1,66 @@
+.project-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.project-details__preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 220px;
+
+    background-color: #050b25;
+
+    border: 2px solid #526aa8;
+
+    color: #8190b8;
+}
+
+.project-details__description {
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: #d8e2ff;
+}
+
+.project-details__technologies {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.project-details__technology {
+    padding: 6px 10px;
+
+    background-color: #182d6b;
+
+    border: 1px solid #526aa8;
+
+    font-size: 13px;
+}
+
+.project-details__actions {
+    display: flex;
+
+    gap: 10px;
+}
+
+.project-details__actions a {
+    padding: 10px 16px;
+
+    background-color: #182d6b;
+    color: white;
+
+    border: 1px solid #718bd0;
+
+    text-decoration: none;
+}
+
+.project-details__actions a:hover {
+    background-color: #27448f;
+}
