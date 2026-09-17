@@ -1,0 +1,136 @@
+.contact {
+    width: 100%;
+}
+
+.contact__layout {
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 20px;
+}
+
+.contact__information {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.contact__info span {
+    color: #8190b8;
+
+    font-size: 13px;
+}
+
+.contact__info a {
+    color: #d8e2ff;
+
+    text-decoration: none;
+}
+
+.contact__info a:hover {
+    color: white;
+
+    text-decoration: underline;
+}
+
+.contact__availability {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid #526aa8;
+
+    color: #b8c4df;
+
+    font-size: 13px;
+}
+
+.contact__status {
+    width: 10px;
+    height: 10px;
+
+    flex-shrink: 0;
+
+    background-color: #65d46e;
+
+    border-radius: 50%;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.contact__field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.contact__field label {
+    color: #b8c4df;
+
+    font-size: 14px;
+}
+
+.contact__field input,
+.contact__field textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #050b25;
+    color: white;
+
+    border: 1px solid #526aa8;
+
+    font: inherit;
+}
+
+.contact__field textarea {
+    resize: vertical;
+}
+
+.contact__field input:focus,
+.contact__field textarea:focus {
+    outline: none;
+
+    border-color: #d8e2ff;
+}
+
+.contact__submit {
+    align-self: flex-end;
+
+    padding: 10px 25px;
+
+    background-color: #182d6b;
+    color: white;
+
+    border: 1px solid #718bd0;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+.contact__submit:hover {
+    background-color: #27448f;
+
+    border-color: #d8e2ff;
+}
