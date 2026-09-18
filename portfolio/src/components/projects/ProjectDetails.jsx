@@ -4,9 +4,15 @@ function ProjectDetails({ project }) {
     return (
         <div className="project-details">
 
+            <span className="project-details__type">
+                {project.type}
+            </span>
+
             <div className="project-details__preview">
                 Aperçu du projet
             </div>
+
+
 
             <p className="project-details__description">
                 {project.description}
