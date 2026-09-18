@@ -11,52 +11,68 @@
 }
 
 .about__portrait {
+    width: 110px;
+    aspect-ratio: 1;
+
+    margin-bottom: 16px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 150px;
-    height: 150px;
+    background: var(--color-window-dark);
 
-    margin: 0 auto 20px;
+    border: 1px solid var(--color-border-dark);
 
-    background-color: #050b25;
+    color: var(--color-text-muted);
 
-    border: 2px solid #526aa8;
-
-    color: #8190b8;
+    font-family: var(--font-rpg);
 }
 
 .about__identity {
-    text-align: center;
-
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .about__identity h2 {
     margin: 0;
 
-    font-size: 22px;
+    color: var(--color-text);
+
+    font-family: var(--font-rpg);
+    font-size: 26px;
+    font-weight: 400;
 }
 
 .about__identity p {
-    margin: 5px 0 0;
+    margin: 4px 0 0;
 
-    color: #b8c4df;
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-rpg);
 }
 
 .about__information {
     display: flex;
     flex-direction: column;
 
-    gap: 12px;
+    gap: 10px;
 }
 
-.about__information div {
+.about__information-row {
     display: flex;
     justify-content: space-between;
 
     gap: 20px;
+}
+
+.about__information-row strong {
+    color: var(--color-text);
+
+    font-family: var(--font-rpg);
+    font-weight: 400;
+
+    text-align: right;
 }
 
 .about__information span {
@@ -70,11 +86,16 @@
 }
 
 .about__biography p {
-    margin-top: 0;
+    margin:
+        0
+        0
+        16px;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-body);
 
     line-height: 1.7;
-
-    color: #d8e2ff;
 }
 
 .about__biography p:last-child {
@@ -85,17 +106,31 @@
     display: flex;
     flex-direction: column;
 
-    gap: 10px;
+    gap: 4px;
 }
 
 .about__stat {
-    display: flex;
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        50px;
+
     align-items: center;
+
+    padding: 7px 4px;
+}
+
+.about__stats-header {
+    display: flex;
     justify-content: space-between;
 
-    padding: 8px 10px;
+    margin-bottom: 8px;
 
-    border-bottom: 1px solid #526aa8;
+    color: var(--color-text-muted);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-small);
 }
 
 .about__stat:last-child {
@@ -108,12 +143,16 @@
 }
 
 .about__stat-name {
-    color: #d8e2ff;
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-rpg);
 }
 
 .about__stat-value {
-    min-width: 45px;
+    color: var(--color-text);
 
+    font-family: var(--font-rpg);
     font-size: var(--font-size-rpg-large);
 
     text-align: right;
@@ -122,7 +161,9 @@
 .about__objective {
     margin: 0;
 
-    line-height: 1.7;
+    color: var(--color-text-secondary);
 
-    color: #d8e2ff;
+    font-family: var(--font-body);
+
+    line-height: 1.7;
 }

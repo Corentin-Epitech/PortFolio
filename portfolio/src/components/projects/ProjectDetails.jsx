@@ -12,12 +12,12 @@ function ProjectDetails({ project }) {
                 {project.description}
             </p>
 
-            <div className="project-details__technologies">
+            <div className="tech-list">
 
                 {project.technologies.map((technology) => (
                     <span
                         key={technology}
-                        className="project-details__technology"
+                        className="tech-item"
                     >
                         {technology}
                     </span>

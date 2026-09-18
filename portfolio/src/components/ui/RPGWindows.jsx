@@ -2,7 +2,7 @@ import "./RPGWindows.css";
 
 function RPGWindow({ title, children, className = "" }) {
     return (
-        <section className={`rpg-window ${className}`}>
+        <section className={`rpg-panel rpg-window ${className}`}>
             {title && (
                 <div className="rpg-window__header">
                     <h2 className="rpg-window__title">

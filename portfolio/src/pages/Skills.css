@@ -11,11 +11,9 @@
 }
 
 .skills__category {
-    padding: 15px;
+    padding: 8px;
 
-    background-color: #101c4d;
-
-    border: 1px solid #526aa8;
+    
 }
 
 .skills__category-title {
@@ -67,4 +65,40 @@
     content: "▶";
 
     color: white;
+}
+
+.skills__environment {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.skills__environment-title {
+    margin:
+        0
+        0
+        10px;
+
+    color: var(--color-text-muted);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+}
+
+.skills__environment-items {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.skills__environment-item {
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-rpg);
 }

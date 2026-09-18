@@ -6,17 +6,18 @@
 }
 
 .main-layout__sidebar {
-    width: 300px;
+    width: var(--sidebar-width);
     flex-shrink: 0;
 
-    background-color: #101a55;
+
 }
 
 .main-layout__content {
     flex: 1;
 
-    background-color: #111;
-    color: white;
+
+    background-color: var(--color-background);
+    color: var(--color-text);
 
     padding: 40px;
 }

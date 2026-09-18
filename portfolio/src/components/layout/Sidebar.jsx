@@ -10,7 +10,7 @@ function Sidebar({ currentPage, setCurrentPage }) {
     return (
         <div className="sidebar">
 
-            <div className="sidebar__profile">
+            <div className="rpg-panel sidebar__profile">
                 <h1 className="sidebar__name">
                     Corentin
                 </h1>
@@ -56,7 +56,7 @@ function Sidebar({ currentPage, setCurrentPage }) {
                 </div>
             </div>
 
-            <nav className="sidebar__navigation">
+            <nav className="rpg-panel sidebar__navigation">
                 <button className={`sidebar__menu-item ${currentPage === "home"
                     ? "sidebar__menu-item--active"
                     : ""
@@ -98,7 +98,7 @@ function Sidebar({ currentPage, setCurrentPage }) {
                 </button>
             </nav>
 
-            <div className="sidebar__footer">
+            <div className="rpg-panel sidebar__footer">
                 <button className="sidebar__menu-item">
                     Paramètres
                 </button>

@@ -4,7 +4,7 @@
 
     height: 100vh;
 
-    color: white;
+    color: var(--color-text);
 
     font-family: var(--font-rpg);
 }
@@ -13,10 +13,6 @@
 .sidebar__navigation,
 .sidebar__footer {
     padding: 18px;
-
-    background-color: #101a55;
-
-    border: 2px solid #526aa8;
 }
 
 /* ---------------- */
