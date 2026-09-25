@@ -6,7 +6,8 @@
     display: grid;
 
     grid-template-columns: 320px 1fr;
-
+    
+    
     gap: 20px;
 }
 
@@ -14,6 +15,7 @@
     display: flex;
     flex-direction: column;
 
+    
     gap: 20px;
 }
 
@@ -21,6 +23,7 @@
     display: flex;
     flex-direction: column;
 
+    padding-left: 10px;
     gap: 5px;
 }
 
@@ -54,7 +57,7 @@
     content: "▶";
 
     position: absolute;
-    left: -16px;
+    left: -20px;
 
     font-family: var(--font-rpg);
 }
@@ -150,32 +153,5 @@
 }
 
 .contact__submit {
-    position: relative;
-
     align-self: flex-end;
-
-    padding: 8px 10px 8px 28px;
-
-    background: transparent;
-    border: none;
-
-    color: var(--color-text-secondary);
-
-    font-family: var(--font-rpg);
-    font-size: var(--font-size-rpg);
-
-    cursor: pointer;
-}
-
-.contact__submit:hover,
-.contact__submit:focus-visible {
-    color: var(--color-text);
-}
-
-.contact__submit:hover::before,
-.contact__submit:focus-visible::before {
-    content: "▶";
-
-    position: absolute;
-    left: 6px;
 }

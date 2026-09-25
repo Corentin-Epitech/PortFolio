@@ -30,7 +30,7 @@ function Home({ setCurrentPage }) {
 
                 <div className="home__buttons">
 
-                    <button className="home__action"
+                    <button className="rpg-button home__action"
                         onClick={() =>
                             setCurrentPage("projects")
                         }
@@ -38,7 +38,7 @@ function Home({ setCurrentPage }) {
                         Voir mes projets
                     </button>
 
-                    <button className="home__action"
+                    <button className="rpg-button home__action"
                         onClick={() =>
                             setCurrentPage("contact")
                         }
@@ -96,7 +96,7 @@ function Home({ setCurrentPage }) {
                             {featuredProject.technologies.map((technology) => <span key={technology} className="tech-item" >{technology}</span>)}
                         </div>
 
-                        <button className="home__action"
+                        <button className="rpg-button home__action"
                             onClick={() =>
                                 setCurrentPage("projects")
                             }

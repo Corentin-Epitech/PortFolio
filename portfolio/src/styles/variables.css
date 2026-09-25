@@ -32,12 +32,12 @@
     --font-rpg: "Pixel Operator", monospace;
     --font-body: "IBM Plex Sans", sans-serif;
 
-    --font-size-small: 14px;
-    --font-size-body: 16px;
+    --font-size-small: 18px;
+    --font-size-body: 20px;
 
-    --font-size-rpg: 18px;
-    --font-size-rpg-large: 20px;
-    --font-size-rpg-title: 24px;
+    --font-size-rpg: 22px;
+    --font-size-rpg-large: 24px;
+    --font-size-rpg-title: 28px;
 
 
     /* ========================= */

@@ -8,9 +8,9 @@ function Skills() {
     return (
         <div className="skills">
 
-            <h1 className="page-title">Équipement</h1>
-
-            <RPGWindow title="Arsenal Technique">
+            <h1 className="page-title">Compétences</h1>
+            
+            <RPGWindow title="Compétences">
 
                 <div className="skills__grid">
 

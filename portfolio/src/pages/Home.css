@@ -59,34 +59,8 @@
     margin-top: 25px;
 }
 
-.home__action {
-    position: relative;
 
-    padding: 6px 8px 6px 26px;
 
-    background: none;
-    border: none;
-
-    color: var(--color-text-secondary);
-
-    font-family: var(--font-rpg);
-    font-size: var(--font-size-rpg);
-
-    cursor: pointer;
-}
-
-.home__action:hover,
-.home__action:focus {
-    color: var(--color-text);
-}
-
-.home__action:hover::before,
-.home__action:focus::before {
-    content: "▶";
-
-    position: absolute;
-    left: 4px;
-}
 
 .home__grid {
     display: grid;
@@ -161,15 +135,7 @@
     margin: 20px 0;
 }
 
-.home__technologies span {
-    padding: 5px 9px;
 
-    background-color: #101c4d;
-
-    border: 1px solid #526aa8;
-
-    font-size: 12px;
-}
 
 .home__featured-project button {
     align-self: flex-start;

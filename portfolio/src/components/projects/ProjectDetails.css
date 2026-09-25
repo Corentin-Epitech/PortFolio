@@ -89,26 +89,5 @@
 }
 
 .project-details__actions a {
-    position: relative;
-
-    padding-left: 22px;
-
-    color: var(--color-text-secondary);
-
-    font-family: var(--font-rpg);
-    font-size: var(--font-size-rpg);
-
     text-decoration: none;
-}
-
-.project-details__actions a:hover {
-    color: var(--color-text);
-}
-
-.project-details__actions a:hover::before {
-    content: "▶";
-
-    position: absolute;
-
-    left: 0;
 }

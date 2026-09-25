@@ -102,3 +102,7 @@
     font-family: var(--font-rpg);
     font-size: var(--font-size-rpg);
 }
+
+.skills > .rpg-window + .rpg-window {
+    margin-top: 20px;
+}

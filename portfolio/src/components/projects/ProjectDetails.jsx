@@ -34,7 +34,7 @@ function ProjectDetails({ project }) {
             <div className="project-details__actions">
 
                 {project.github && (
-                    <a
+                    <a className="rpg-button"
                         href={project.github}
                         target="_blank"
                         rel="noreferrer"
@@ -44,7 +44,7 @@ function ProjectDetails({ project }) {
                 )}
 
                 {project.website && (
-                    <a
+                    <a className="rpg-button"
                         href={project.website}
                         target="_blank"
                         rel="noreferrer"

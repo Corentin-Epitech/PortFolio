@@ -23,14 +23,14 @@
 .sidebar__name {
     margin: 0;
 
-    font-size: 24px;
+    font-size: 36px;
     text-transform: uppercase;
 }
 
 .sidebar__job {
     margin-top: 5px;
 
-    font-size: 14px;
+    font-size: 20px;
     color: #b8c4df;
 }
 
@@ -130,7 +130,7 @@
     color: white;
 
     text-align: left;
-    font-size: 16px;
+    font-size: 30px;
 
     cursor: pointer;
 }
