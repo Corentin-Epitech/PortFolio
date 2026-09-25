@@ -12,7 +12,7 @@ function About() {
             <div className="about__layout">
 
                 <RPGWindow
-                    title="Profil"
+                    title="Personnage"
                     className="about__profile"
                 >
                     <div className="about__portrait">
@@ -26,18 +26,18 @@ function About() {
                     </div>
 
                     <div className="about__information">
-                        <div>
-                            <span>Classe</span>
+                        <div className="about__information-row">
+                            <span className="rpg-label">Classe</span>
                             <strong>Développeur</strong>
                         </div>
 
-                        <div>
-                            <span>Spécialité</span>
+                        <div className="about__information-row">
+                            <span className="rpg-label">Spécialité</span>
                             <strong>Web Full Stack</strong>
                         </div>
 
-                        <div>
-                            <span>Localisation</span>
+                        <div className="about__information-row">
+                            <span className="rpg-label">Localisation</span>
                             <strong>France</strong>
                         </div>
                     </div>
@@ -65,6 +65,11 @@ function About() {
                 <RPGWindow title="Statistiques">
 
                     <div className="about__stats">
+
+                        <div className="about__stats-header">
+                            <span>STAT</span>
+                            <span>MAX 255</span>
+                        </div>
 
                         {stats.map((stat) => (
                             <div

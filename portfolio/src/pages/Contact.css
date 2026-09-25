@@ -6,7 +6,8 @@
     display: grid;
 
     grid-template-columns: 320px 1fr;
-
+    
+    
     gap: 20px;
 }
 
@@ -14,6 +15,7 @@
     display: flex;
     flex-direction: column;
 
+    
     gap: 20px;
 }
 
@@ -21,25 +23,43 @@
     display: flex;
     flex-direction: column;
 
+    padding-left: 10px;
     gap: 5px;
 }
 
 .contact__info span {
-    color: #8190b8;
+    color: var(--color-text-muted);
 
-    font-size: 13px;
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-small);
 }
 
 .contact__info a {
-    color: #d8e2ff;
-
+    color: var(--color-text-secondary);
     text-decoration: none;
 }
 
 .contact__info a:hover {
-    color: white;
+    position: relative;
 
-    text-decoration: underline;
+    color: var(--color-text-secondary);
+
+    text-decoration: none;
+}
+
+.contact__info a:hover,
+.contact__info a:focus-visible {
+    color: var(--color-text);
+}
+
+.contact__info a:hover::before,
+.contact__info a:focus-visible::before {
+    content: "▶";
+
+    position: absolute;
+    left: -20px;
+
+    font-family: var(--font-rpg);
 }
 
 .contact__availability {
@@ -64,9 +84,14 @@
 
     flex-shrink: 0;
 
-    background-color: #65d46e;
+    background-color: var(--color-success);
 
     border-radius: 50%;
+
+    box-shadow:
+        0 0 6px color-mix(in srgb,
+            var(--color-success) 50%,
+            transparent);
 }
 
 .contact__form {
@@ -84,9 +109,10 @@
 }
 
 .contact__field label {
-    color: #b8c4df;
+    color: var(--color-text-secondary);
 
-    font-size: 14px;
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-small);
 }
 
 .contact__field input,
@@ -95,12 +121,20 @@
 
     padding: 12px;
 
-    background-color: #050b25;
-    color: white;
+    background-color: var(--color-background);
 
-    border: 1px solid #526aa8;
+    color: var(--color-text);
 
-    font: inherit;
+    border:
+        1px solid
+        var(--color-border-dark);
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+
+    transition:
+        border-color 120ms ease,
+        box-shadow 120ms ease;
 }
 
 .contact__field textarea {
@@ -111,26 +145,13 @@
 .contact__field textarea:focus {
     outline: none;
 
-    border-color: #d8e2ff;
+    border-color: var(--color-border-light);
+
+    box-shadow:
+        0 0 7px
+        rgba(229, 236, 255, 0.15);
 }
 
 .contact__submit {
     align-self: flex-end;
-
-    padding: 10px 25px;
-
-    background-color: #182d6b;
-    color: white;
-
-    border: 1px solid #718bd0;
-
-    font: inherit;
-
-    cursor: pointer;
-}
-
-.contact__submit:hover {
-    background-color: #27448f;
-
-    border-color: #d8e2ff;
 }

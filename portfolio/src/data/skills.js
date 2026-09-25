@@ -1,7 +1,7 @@
 const equipment = [
     {
         id: "frontend",
-        category: "Frontend",
+        category: "FRONTEND",
         items: [
             "React",
             "JavaScript",
@@ -11,7 +11,7 @@ const equipment = [
     },
     {
         id: "backend",
-        category: "Backend",
+        category: "BACKEND",
         items: [
             "Symfony",
             "PHP",
@@ -20,7 +20,7 @@ const equipment = [
     },
     {
         id: "database",
-        category: "Base de données",
+        category: "BASE DE DONNÉES",
         items: [
             "PostgreSQL",
             "MySQL",
@@ -28,7 +28,7 @@ const equipment = [
     },
     {
         id: "tools",
-        category: "Outils",
+        category: "OUTILS",
         items: [
             "Git",
             "Docker",

@@ -1,9 +1,9 @@
 .experience-item {
     display: grid;
 
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 24px 1fr;
 
-    gap: 15px;
+    gap: 18px;
 }
 
 .experience-item__marker {
@@ -13,28 +13,37 @@
 }
 
 .experience-item__dot {
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
 
     flex-shrink: 0;
 
-    background-color: #d8e2ff;
+    background-color: var(--color-text);
 
-    border: 3px solid #526aa8;
+    border: 2px solid var(--color-border-light);
+
     border-radius: 50%;
+
+    box-shadow:
+        0 0 6px rgba(229, 236, 255, 0.35);
 }
 
 .experience-item__line {
-    width: 2px;
+    width: 1px;
     height: 100%;
+    min-height: 40px;
 
-    min-height: 30px;
+    background: linear-gradient(
+        to bottom,
+        var(--color-border-light),
+        var(--color-border-dark)
+    );
 
-    background-color: #526aa8;
+    opacity: 0.7;
 }
 
 .experience-item__content {
-    padding-bottom: 35px;
+    padding-bottom: 32px;
 }
 
 .experience-item__header {
@@ -48,42 +57,64 @@
 }
 
 .experience-item__period {
-    color: #b8c4df;
+    display: block;
 
-    font-size: 14px;
+    margin-bottom: 6px;
+
+    color: var(--color-text-muted);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-small);
 }
 
 .experience-item__type {
-    padding: 4px 8px;
+    padding: 3px 8px;
 
-    background-color: #182d6b;
+    border:
+        1px solid
+        var(--color-border-dark);
 
-    border: 1px solid #526aa8;
+    color: var(--color-text-muted);
 
-    font-size: 12px;
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-small);
 }
 
 .experience-item__title {
     margin: 0;
 
-    font-size: 20px;
-    font-weight: normal;
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+    font-size: 21px;
+    font-weight: 600;
 }
 
 .experience-item__organization {
-    margin: 5px 0 15px;
+    margin:
+        3px
+        0
+        12px;
 
-    color: #8190b8;
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-body);
+    font-size: 15px;
 }
 
 .experience-item__description {
-    max-width: 800px;
+    max-width: 750px;
 
-    margin: 0;
+    margin:
+        0
+        0
+        14px;
 
-    line-height: 1.6;
+    color: var(--color-text-secondary);
 
-    color: #d8e2ff;
+    font-family: var(--font-body);
+
+    line-height: 1.65;
 }
 
 .experience-item__technologies {
@@ -111,4 +142,11 @@
 
 .experience-item:last-child .experience-item__content {
     padding-bottom: 0;
+}
+
+.experience-item:first-child
+.experience-item__dot {
+    box-shadow:
+        0 0 5px rgba(229, 236, 255, 0.5),
+        0 0 12px rgba(23, 70, 162, 0.45);
 }

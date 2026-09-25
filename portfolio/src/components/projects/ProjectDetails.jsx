@@ -4,20 +4,26 @@ function ProjectDetails({ project }) {
     return (
         <div className="project-details">
 
+            <span className="project-details__type">
+                {project.type}
+            </span>
+
             <div className="project-details__preview">
                 Aperçu du projet
             </div>
+
+
 
             <p className="project-details__description">
                 {project.description}
             </p>
 
-            <div className="project-details__technologies">
+            <div className="tech-list">
 
                 {project.technologies.map((technology) => (
                     <span
                         key={technology}
-                        className="project-details__technology"
+                        className="tech-item"
                     >
                         {technology}
                     </span>
@@ -28,7 +34,7 @@ function ProjectDetails({ project }) {
             <div className="project-details__actions">
 
                 {project.github && (
-                    <a
+                    <a className="rpg-button"
                         href={project.github}
                         target="_blank"
                         rel="noreferrer"
@@ -38,7 +44,7 @@ function ProjectDetails({ project }) {
                 )}
 
                 {project.website && (
-                    <a
+                    <a className="rpg-button"
                         href={project.website}
                         target="_blank"
                         rel="noreferrer"

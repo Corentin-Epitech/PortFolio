@@ -132,7 +132,7 @@ function Contact() {
 
 
                         <button
-                            className="contact__submit"
+                            className="rpg-button contact__submit"
                             type="submit"
                         >
                             Envoyer

@@ -2,14 +2,15 @@ import "./Skills.css"
 
 import RPGWindow from "../components/ui/RPGWindows";
 import equipment from "../data/skills";
+import environment from "../data/equipment";
 
 function Skills() {
     return (
         <div className="skills">
 
-            <h1 className="page-title">Équipement</h1>
-
-            <RPGWindow title="Arsenal Technique">
+            <h1 className="page-title">Compétences</h1>
+            
+            <RPGWindow title="Compétences">
 
                 <div className="skills__grid">
 
@@ -43,6 +44,39 @@ function Skills() {
 
             </RPGWindow>
 
+            <RPGWindow title="Environnement">
+
+                <div className="skills__environment">
+
+                    {environment.map((group) => (
+                        <div
+                            key={group.id}
+                            className="skills__environment-group"
+                        >
+
+                            <h3 className="skills__environment-title">
+                                {group.category}
+                            </h3>
+
+                            <div className="skills__environment-items">
+
+                                {group.items.map((item) => (
+                                    <span
+                                        key={item}
+                                        className="skills__environment-item"
+                                    >
+                                        {item}
+                                    </span>
+                                ))}
+
+                            </div>
+
+                        </div>
+                    ))}
+
+                </div>
+
+            </RPGWindow>
         </div>
     );
 }

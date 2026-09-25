@@ -40,7 +40,7 @@ function ExperienceItem({ experience }) {
                     {experience.technologies.map((technology) => (
                         <span
                             key={technology}
-                            className="experience-item__technology"
+                            className="tech-item"
                         >
                             {technology}
                         </span>

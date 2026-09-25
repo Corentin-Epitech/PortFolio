@@ -11,14 +11,11 @@ function Home({ setCurrentPage }) {
 
         <div className="home">
 
-            <section className="home__hero">
+            <section className="rpg-panel home__hero">
 
-                <p className="home__eyebrow">
-                    Bienvenue sur mon portfolio
-                </p>
 
                 <h1 className="home__name">
-                    Corentin
+                    Corentin Courtine
                 </h1>
 
                 <h2 className="home__job">
@@ -31,9 +28,9 @@ function Home({ setCurrentPage }) {
                     fonctionnement côté serveur.
                 </p>
 
-                <div className="home__actions">
+                <div className="home__buttons">
 
-                    <button
+                    <button className="rpg-button home__action"
                         onClick={() =>
                             setCurrentPage("projects")
                         }
@@ -41,7 +38,7 @@ function Home({ setCurrentPage }) {
                         Voir mes projets
                     </button>
 
-                    <button
+                    <button className="rpg-button home__action"
                         onClick={() =>
                             setCurrentPage("contact")
                         }
@@ -96,10 +93,10 @@ function Home({ setCurrentPage }) {
                         </p>
 
                         <div className="home__technologies">
-                            {featuredProject.technologies.map((technology) => <span key={technology}>{technology}</span>)}
+                            {featuredProject.technologies.map((technology) => <span key={technology} className="tech-item" >{technology}</span>)}
                         </div>
 
-                        <button
+                        <button className="rpg-button home__action"
                             onClick={() =>
                                 setCurrentPage("projects")
                             }
