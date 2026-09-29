@@ -4,12 +4,25 @@ function ProjectDetails({ project }) {
     return (
         <div className="project-details">
 
-            <span className="project-details__type">
-                {project.type}
-            </span>
+            <div className="project-details__meta">
+                <span>{project.type}</span>
+
+                <span className="project-details__separator">-</span>
+
+                <span>{project.Status}</span>
+
+                <span className="project-details__separator">-</span>
+
+                <span className="project-details__status">
+                    {project.online ? "En ligne" : "Hors ligne"}
+                </span>
+            </div>
 
             <div className="project-details__preview">
-                Aperçu du projet
+                <img
+                    src={project.image}
+                    alt={`Aperçu du projet ${project.title}`}
+                />
             </div>
 
 
@@ -34,7 +47,8 @@ function ProjectDetails({ project }) {
             <div className="project-details__actions">
 
                 {project.github && (
-                    <a className="rpg-button"
+                    <a
+                        className="rpg-button"
                         href={project.github}
                         target="_blank"
                         rel="noreferrer"
@@ -43,8 +57,9 @@ function ProjectDetails({ project }) {
                     </a>
                 )}
 
-                {project.website && (
-                    <a className="rpg-button"
+                {project.online && project.website && (
+                    <a
+                        className="rpg-button"
                         href={project.website}
                         target="_blank"
                         rel="noreferrer"

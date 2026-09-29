@@ -3,10 +3,22 @@ const equipment = [
         id: "frontend",
         category: "FRONTEND",
         items: [
-            "React",
+            "Python",
             "JavaScript",
-            "HTML",
-            "CSS",
+            "Java",
+            "PHP",
+            "SQL"
+        ],
+    },
+    {
+        id: "frontend",
+        category: "FRONTEND",
+        items: [
+            "React.js",
+            "HTML5",
+            "CSS3",
+            "MVC",
+            "Responsive Design"
         ],
     },
     {
@@ -14,8 +26,10 @@ const equipment = [
         category: "BACKEND",
         items: [
             "Symfony",
-            "PHP",
-            "Node.js",
+            "Laravel",
+            "Authentication",
+            "API REST",
+            "Route & Controller"
         ],
     },
     {
@@ -24,6 +38,15 @@ const equipment = [
         items: [
             "PostgreSQL",
             "MySQL",
+            "MongoDB"
+        ],
+    },
+    {
+        id: "Q&A",
+        category: "Test & Qualité",
+        items: [
+            "Cypress",
+            "Mocha"
         ],
     },
     {
@@ -32,6 +55,7 @@ const equipment = [
         items: [
             "Git",
             "Docker",
+            "CI/CD"
         ],
     },
 ];
