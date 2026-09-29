@@ -2,6 +2,7 @@ import "./About.css";
 
 import RPGWindow from "../components/ui/RPGWindows";
 import stats from "../data/stats";
+import avatar from "../assets/Avatar.png"
 
 function About() {
     return (
@@ -16,7 +17,11 @@ function About() {
                     className="about__profile"
                 >
                     <div className="about__portrait">
-                        Portrait
+                        <img
+                            src={avatar}
+                            alt="Avatar de Corentin"
+                            className="about__avatar"
+                        />
                     </div>
 
                     <div className="about__identity">
@@ -66,10 +71,6 @@ function About() {
 
                     <div className="about__stats">
 
-                        <div className="about__stats-header">
-                            <span>STAT</span>
-                            <span>MAX 255</span>
-                        </div>
 
                         {stats.map((stat) => (
                             <div
@@ -93,10 +94,11 @@ function About() {
 
                 <RPGWindow title="Objectifs">
                     <p className="about__objective">
-                        Continuer à développer mes compétences
-                        techniques et participer à des projets
-                        web me permettant de progresser aussi bien
-                        en frontend qu'en backend.
+                        Actuellement en formation de développeur Full Stack à la Web@cademie by Epitech, mon objectif est de continuer à développer mes compétences à travers des projets concrets et de nouvelles expériences.
+                        Je recherche aujourd’hui une alternance dans le développement web, qui me permettra de mettre en pratique mes connaissances, de découvrir davantage le fonctionnement d’une équipe de développement et de progresser aussi bien en Front-End qu’en Back-End.
+                    </p>
+                    <p className="about__objective">
+                        À plus long terme, je souhaite devenir un développeur polyvalent, capable de concevoir des applications complètes tout en continuant à découvrir de nouvelles technologies et méthodes de développement.
                     </p>
                 </RPGWindow>
 
