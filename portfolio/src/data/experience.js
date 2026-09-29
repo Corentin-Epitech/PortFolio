@@ -1,12 +1,12 @@
 const experiences = [
     {
         id: 1,
-        period: "2025 - 2026",
-        title: "Développeur Web",
-        organization: "Nom de l'entreprise",
-        type: "Alternance",
+        period: "2025 - 2027",
+        title: "Web@cadémie by Epitech",
+        organization: "Epitech",
+        type: "Formation",
         description:
-            "Développement et maintenance d'applications web dans le cadre de mon alternance.",
+            "Formations en web development fait à épitech",
         technologies: [
             "React",
             "Symfony",
@@ -15,18 +15,64 @@ const experiences = [
     },
     {
         id: 2,
-        period: "2024 - 2025",
-        title: "Formation Développement Web",
-        organization: "Nom de l'établissement",
+        period: "2025",
+        title: "Formation Développement informatique",
+        organization: "Boot.dev",
         type: "Formation",
         description:
-            "Formation orientée développement web frontend et backend.",
+            "Formation en ligne orientée développement logiciel",
         technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP",
-            "SQL",
+            "Python",
+            "Git",
+
+        ],
+    },
+    {
+        id: 3,
+        period: "2023 - 2025",
+        title: "Chargé d'accueil",
+        organization: "Morning",
+        type: "Emploi",
+        description:
+            "",
+        technologies: [
+            
+        ],
+    },
+    {
+        id: 4,
+        period: "2020 - 2022",
+        title: "Employé polyvalent",
+        organization: "KFC",
+        type: "Emploi",
+        description:
+            "",
+        technologies: [
+            
+        ],
+    },
+    {
+        id: 5,
+        period: "2018 - 2019",
+        title: "Employé magasin",
+        organization: "Auchan",
+        type: "Emploi",
+        description:
+            "",
+        technologies: [
+            
+        ],
+    },
+    {
+        id: 6,
+        period: "2016 - 2018",
+        title: "Bac ES",
+        organization: "Lycée Emilie du Chatelet",
+        type: "Scolarité",
+        description:
+            "",
+        technologies: [
+            
         ],
     },
 ];

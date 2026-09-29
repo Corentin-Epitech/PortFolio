@@ -39,8 +39,8 @@ function Contact() {
                         <div className="contact__info">
                             <span>Email</span>
 
-                            <a href="mailto:adresse@email.com">
-                                adresse@email.com
+                            <a href="mailto:courtine.corentin@gmail.com">
+                                courtine.corentin@gmail.com
                             </a>
                         </div>
 
@@ -48,7 +48,7 @@ function Contact() {
                             <span>GitHub</span>
 
                             <a
-                                href="#"
+                                href="https://github.com/Corentin-Epitech"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -60,7 +60,7 @@ function Contact() {
                             <span>LinkedIn</span>
 
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/corentin-courtine-30b5771b0/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -73,7 +73,7 @@ function Contact() {
                     <div className="contact__availability">
                         <span className="contact__status" />
 
-                        Disponible pour de nouvelles opportunités
+                        Disponible pour une alternance
                     </div>
 
                 </RPGWindow>
