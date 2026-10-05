@@ -11,22 +11,20 @@
 }
 
 .about__portrait {
-    width: 110px;
-    aspect-ratio: 1;
-
-    margin-bottom: 16px;
-
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    background: var(--color-window-dark);
+    height: 160px;
 
-    border: 1px solid var(--color-border-dark);
+    overflow: hidden;
+}
 
-    color: var(--color-text-muted);
+.about__avatar {
+    width: 170px;
+    height: 170px;
 
-    font-family: var(--font-rpg);
+    object-fit: contain;
 }
 
 .about__identity {

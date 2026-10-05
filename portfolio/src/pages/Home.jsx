@@ -23,9 +23,7 @@ function Home({ setCurrentPage }) {
                 </h2>
 
                 <p className="home__introduction">
-                    Je développe des applications web en travaillant
-                    aussi bien sur leur interface que sur leur
-                    fonctionnement côté serveur.
+                    Développeur Full Stack en formation à Web@cademie by Epitech, spécialisé dans le développement d'applications web avec React.js, Laravel, PHP et MySQL. Expérience dans la conception d'API REST, le développement Front-End et Back-End, ainsi que l'intégration de pipelines CI/CD. Habitué au travail en équipe, à la résolution de problèmes et aux méthodologies de développement collaboratif.
                 </p>
 
                 <div className="home__buttons">
