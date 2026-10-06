@@ -10,6 +10,20 @@
     gap: 20px;
 }
 
+@media (max-width: 1300px) {
+    .projects__layout {
+        grid-template-columns: 210px minmax(0, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects__layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
 .projects__list {
     display: flex;
     flex-direction: column;
@@ -19,6 +33,27 @@
 
 .projects__list-window {
     min-height: 420px;
+}
+
+@media (max-width: 1000px) {
+    .projects__layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .projects__list-window {
+        min-height: 0;
+    }
+
+    .projects__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+    }
+
+    .projects__list button {
+        width: auto;
+    }
 }
 
 .projects__item {

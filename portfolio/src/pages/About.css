@@ -10,6 +10,19 @@
     gap: 20px;
 }
 
+@media (max-width: 1300px) {
+    .about__layout {
+        grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1.3fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .about__layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
 .about__portrait {
     display: flex;
     justify-content: center;
@@ -164,4 +177,13 @@
     font-family: var(--font-body);
 
     line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+    .about__character-content {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 24px;
+    }
 }

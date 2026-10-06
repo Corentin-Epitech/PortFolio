@@ -1,7 +1,7 @@
 const equipment = [
     {
-        id: "frontend",
-        category: "FRONTEND",
+        id: "language",
+        category: "LANGUAGE",
         items: [
             "Python",
             "JavaScript",
