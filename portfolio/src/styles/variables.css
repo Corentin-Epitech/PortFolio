@@ -70,4 +70,12 @@
         var(--color-window-light) 0%,
         var(--color-window) 40%,
         var(--color-window-dark) 100%);
+
+    /* ========================= */
+    /* POINTER                   */
+    /* ========================= */
+
+    --rpg-pointer: url("../assets/FF7_pointer.png");
+    --rpg-pointer-width: 28px;
+    --rpg-pointer-height: 22px;
 }

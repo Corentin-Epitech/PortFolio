@@ -91,7 +91,7 @@ button {
     min-width: 0;
 
     overflow-wrap: anywhere;
-    
+
     font-size: clamp(12px, 1.2vw + 9px, 16px);
 }
 
@@ -110,13 +110,21 @@ button {
 }
 
 .rpg-selectable--active::before {
-    content: "▶";
+    content: "";
 
     position: absolute;
 
     left: 0;
+    top: 50%;
 
-    color: var(--color-text);
+    width: var(--rpg-pointer-width);
+    height: var(--rpg-pointer-height);
+
+    background: var(--rpg-pointer) center / contain no-repeat;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
 }
 
 .rpg-button {
@@ -167,39 +175,59 @@ button {
 
     box-shadow:
         0 0 7px rgba(229, 236, 255, 0.15);
+
 }
 
 
 .rpg-button::before {
-    content: "▶";
+    content: "";
 
     position: absolute;
 
-    left: 12px;
+    left: 8px;
     top: 50%;
 
-    transform:
-        translateY(-50%);
+    width: var(--rpg-pointer-width);
+    height: var(--rpg-pointer-height);
 
-    color:
-        var(--color-text);
+    background: var(--rpg-pointer) center / contain no-repeat;
 
-    font-family:
-        var(--font-rpg);
-
-    font-size:
-        0.8em;
+    transform: translateY(-50%);
 
     opacity: 0;
-
     pointer-events: none;
 
-    transition:
-        opacity 120ms ease;
+    transition: opacity 120ms ease;
 }
 
 
 .rpg-button:hover::before,
 .rpg-button:focus-visible::before {
     opacity: 1;
+}
+
+.rpg-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.rpg-button:disabled::before {
+    opacity: 0;
+}
+
+.rpg-button:disabled:hover {
+    background: rgba(5, 8, 23, 0.25);
+    border-color: var(--color-border-dark);
+    color: var(--color-text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rpg-button {
+        transition: none;
+    }
+
+    .rpg-button::before {
+        transition: none;
+    }
 }

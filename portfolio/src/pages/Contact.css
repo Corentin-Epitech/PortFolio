@@ -61,12 +61,21 @@
 
 .contact__info a:hover::before,
 .contact__info a:focus-visible::before {
-    content: "▶";
+    content: "";
 
     position: absolute;
-    left: -20px;
 
-    font-family: var(--font-rpg);
+    left: calc(-1 * var(--rpg-pointer-width) - -1px);
+    top: 50%;
+
+    width: var(--rpg-pointer-width);
+    height: var(--rpg-pointer-height);
+
+    background: var(--rpg-pointer) center / contain no-repeat;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
 }
 
 .contact__availability {
