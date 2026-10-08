@@ -11,6 +11,13 @@
     gap: 20px;
 }
 
+@media (max-width: 1000px) {
+    .contact__layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
 .contact__information {
     display: flex;
     flex-direction: column;

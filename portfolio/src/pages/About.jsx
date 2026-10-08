@@ -16,36 +16,43 @@ function About() {
                     title="Personnage"
                     className="about__profile"
                 >
-                    <div className="about__portrait">
-                        <img
-                            src={avatar}
-                            alt="Avatar de Corentin"
-                            className="about__avatar"
-                        />
-                    </div>
 
-                    <div className="about__identity">
-                        <h2>Corentin</h2>
 
-                        <p>Développeur Web</p>
-                    </div>
+                    <div className="about__character-content">
 
-                    <div className="about__information">
-                        <div className="about__information-row">
-                            <span className="rpg-label">Classe</span>
-                            <strong>Développeur</strong>
+                        <div className="about__portrait">
+                            <img
+                                src={avatar}
+                                alt="Avatar de Corentin"
+                                className="about__avatar"
+                            />
+                        </div>
+                        <div className="about__identity">
+                            <h2>Corentin</h2>
+
+                            <p>Développeur Web</p>
                         </div>
 
-                        <div className="about__information-row">
-                            <span className="rpg-label">Spécialité</span>
-                            <strong>Web Full Stack</strong>
+                        <div className="about__information">
+                            <div className="about__information-row">
+                                <span className="rpg-label">Classe</span>
+                                <strong>Développeur</strong>
+                            </div>
+
+                            <div className="about__information-row">
+                                <span className="rpg-label">Spécialité</span>
+                                <strong>Web Full Stack</strong>
+                            </div>
+
+                            <div className="about__information-row">
+                                <span className="rpg-label">Localisation</span>
+                                <strong>France</strong>
+                            </div>
                         </div>
 
-                        <div className="about__information-row">
-                            <span className="rpg-label">Localisation</span>
-                            <strong>France</strong>
-                        </div>
                     </div>
+
+
                 </RPGWindow>
 
 
