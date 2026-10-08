@@ -91,7 +91,7 @@ button {
     min-width: 0;
 
     overflow-wrap: anywhere;
-    
+
     font-size: clamp(12px, 1.2vw + 9px, 16px);
 }
 
@@ -175,6 +175,7 @@ button {
 
     box-shadow:
         0 0 7px rgba(229, 236, 255, 0.15);
+
 }
 
 
@@ -203,4 +204,30 @@ button {
 .rpg-button:hover::before,
 .rpg-button:focus-visible::before {
     opacity: 1;
+}
+
+.rpg-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.rpg-button:disabled::before {
+    opacity: 0;
+}
+
+.rpg-button:disabled:hover {
+    background: rgba(5, 8, 23, 0.25);
+    border-color: var(--color-border-dark);
+    color: var(--color-text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rpg-button {
+        transition: none;
+    }
+
+    .rpg-button::before {
+        transition: none;
+    }
 }
