@@ -11,6 +11,9 @@ function Contact() {
         message: "",
     });
 
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null);
+
     function handleChange(event) {
         const { name, value } = event.target;
 
@@ -20,10 +23,43 @@ function Contact() {
         }));
     }
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
         event.preventDefault();
 
-        console.log(formData);
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        try {
+            const response = await fetch(
+                "https://formspree.io/f/mgaokzeo",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                }
+            );
+
+            if (!response.ok) {
+                throw new Error("Erreur lors de l'envoi");
+            }
+
+            setSubmitStatus("success");
+
+            setFormData({
+                name: "",
+                email: "",
+                message: "",
+            });
+
+        } catch (error) {
+            console.error(error);
+            setSubmitStatus("error");
+        } finally {
+            setIsSubmitting(false);
+        }
     }
 
     return (
@@ -131,12 +167,22 @@ function Contact() {
                         </div>
 
 
-                        <button
-                            className="rpg-button contact__submit"
-                            type="submit"
-                        >
-                            Envoyer
+
+                        <button className="rpg-button contact__submit" type="submit" disabled={isSubmitting}>
+                            {isSubmitting ? "Envoi en cours..." : "Envoyer"}
                         </button>
+
+                        {submitStatus === "success" && (
+                            <p className="contact__success" role="status">
+                                Message envoyé avec succès !
+                            </p>
+                        )}
+
+                        {submitStatus === "error" && (
+                            <p className="contact__error" role="alert">
+                                Une erreur est survenue. Veuillez réessayer.
+                            </p>
+                        )}
 
                     </form>
 
