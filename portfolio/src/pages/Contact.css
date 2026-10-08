@@ -162,3 +162,16 @@
 .contact__submit {
     align-self: flex-end;
 }
+
+.contact__success {
+    color: var(--color-success);
+}
+
+.contact__error {
+    color: var(--color-danger);
+}
+
+.contact button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
