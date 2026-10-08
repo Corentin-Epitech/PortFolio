@@ -110,13 +110,21 @@ button {
 }
 
 .rpg-selectable--active::before {
-    content: "▶";
+    content: "";
 
     position: absolute;
 
     left: 0;
+    top: 50%;
 
-    color: var(--color-text);
+    width: var(--rpg-pointer-width);
+    height: var(--rpg-pointer-height);
+
+    background: var(--rpg-pointer) center / contain no-repeat;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
 }
 
 .rpg-button {
@@ -171,31 +179,24 @@ button {
 
 
 .rpg-button::before {
-    content: "▶";
+    content: "";
 
     position: absolute;
 
-    left: 12px;
+    left: 8px;
     top: 50%;
 
-    transform:
-        translateY(-50%);
+    width: var(--rpg-pointer-width);
+    height: var(--rpg-pointer-height);
 
-    color:
-        var(--color-text);
+    background: var(--rpg-pointer) center / contain no-repeat;
 
-    font-family:
-        var(--font-rpg);
-
-    font-size:
-        0.8em;
+    transform: translateY(-50%);
 
     opacity: 0;
-
     pointer-events: none;
 
-    transition:
-        opacity 120ms ease;
+    transition: opacity 120ms ease;
 }
 
 

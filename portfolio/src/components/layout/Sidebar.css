@@ -145,8 +145,18 @@
 }
 
 .sidebar__menu-item--active::before {
-    content: "▶";
+    content: "";
+
+    display: inline-block;
+
+    width: var(--rpg-pointer-width);
+    height: var(--rpg-pointer-height);
+
     margin-right: 10px;
+
+    background: var(--rpg-pointer) center / contain no-repeat;
+
+    vertical-align: middle;
 }
 
 
