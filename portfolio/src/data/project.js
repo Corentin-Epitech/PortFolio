@@ -12,7 +12,7 @@ const projects = [
         Status: "Projet Scolaire",
         shortDescription: "Plateforme web d’agrégation d’offres d’emploi, de stage et d’alternance.",
         description:
-            "OVERKILL est une plateforme web d’agrégation d’offres d’emploi, de stage et d’alternance. Elle collecte des annonces externes, les normalise dans un catalogue homogène et propose des outils pour rechercher, comparer et suivre ses opportunités. Le produit a été développé dans le cadre du projet Epitech W-YEP-200 — Job Aggregator, en partenariat avec WeLoveDevs. Il réunit une interface responsive, une API REST sécurisée, un pipeline d’ingestion de données et une analyse de CV assistée par un modèle d’IA exécuté localement.",
+            "OVERKILL est une plateforme web d’agrégation d’offres d’emploi, de stage et d’alternance. Elle collecte des annonces externes, les normalise dans un catalogue homogène et propose des outils pour rechercher, comparer et suivre ses opportunités. Le produit a été développé dans le cadre d'un projet Epitech, en partenariat avec WeLoveDevs. Il réunit une interface responsive, une API REST sécurisée, un pipeline d’ingestion de données et une analyse de CV assistée par un modèle d’IA exécuté localement.",
         technologies: ["React", "Symfony", "PostgreSQL", "n8n"],
         github: "https://github.com/EpitechWebAcademiePromo2027/W-YEP-200-PAR-2-1-job_aggregator-2",
         website: "#",

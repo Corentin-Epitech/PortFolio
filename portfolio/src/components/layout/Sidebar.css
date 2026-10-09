@@ -75,12 +75,12 @@
 }
 
 .sidebar__stat-fill--hp {
-    width: 5%;
+    width: 50%;
     background-color: #65d46e;
 }
 
 .sidebar__stat-fill--mp {
-    width: 1%;
+    width: 15%;
     background-color: #5898ff;
 }
 

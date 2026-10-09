@@ -61,16 +61,12 @@ function About() {
                     className="about__biography"
                 >
                     <p>
-                        Je suis développeur web avec un intérêt
-                        particulier pour la création d'applications
-                        et la résolution de problèmes techniques.
+                        Passionné d'informatique et de jeux vidéo depuis l'enfance, j'ai toujours souhaité faire du développement, avec un intérêt particulier pour le game development et le game design.
                     </p>
 
-                    <p>
-                        J'apprécie aussi bien le développement frontend
-                        que backend et j'aime découvrir de nouvelles
-                        technologies à travers mes projets.
-                    </p>
+                    <p>Mon parcours ne m'a cependant pas directement conduit vers ce domaine. Après une première orientation dans les études, j'ai intégré le monde du travail, sans pour autant abandonner mon envie de devenir développeur.</p>
+                    <p>C'est grâce à la Web@cadémie d'Epitech que j'ai finalement pu renouer avec cette ambition, en me tournant vers le développement web.</p>
+                    <p>Aujourd'hui, je poursuis cet objectif à travers ma formation et mes projets personnels, avec la même envie de créer, d'expérimenter et de donner vie à mes idées.</p>
                 </RPGWindow>
 
 
@@ -104,9 +100,7 @@ function About() {
                         Actuellement en formation de développeur Full Stack à la Web@cademie by Epitech, mon objectif est de continuer à développer mes compétences à travers des projets concrets et de nouvelles expériences.
                         Je recherche aujourd’hui une alternance dans le développement web, qui me permettra de mettre en pratique mes connaissances, de découvrir davantage le fonctionnement d’une équipe de développement et de progresser aussi bien en Front-End qu’en Back-End.
                     </p>
-                    <p className="about__objective">
-                        À plus long terme, je souhaite devenir un développeur polyvalent, capable de concevoir des applications complètes tout en continuant à découvrir de nouvelles technologies et méthodes de développement.
-                    </p>
+                    
                 </RPGWindow>
 
             </div>
