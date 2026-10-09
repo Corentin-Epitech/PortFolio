@@ -1,0 +1,23 @@
+.rpg-window {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.rpg-window__header {
+    padding: 16px 20px 0;
+}
+
+.rpg-window__title {
+      margin: 0;
+
+    color: var(--color-text);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-rpg-title);
+    font-weight: 400;
+}
+
+.rpg-window__content {
+    padding: 16px 20px 20px;
+}

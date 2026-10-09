@@ -1,0 +1,81 @@
+:root {
+    /* ========================= */
+    /* COLORS                    */
+    /* ========================= */
+
+    --color-background: #050817;
+
+    /* RPG Windows */
+    --color-window-dark: #07184f;
+    --color-window: #0b287a;
+    --color-window-light: #1746a2;
+
+    /* Borders */
+    --color-border-dark: #7387b8;
+    --color-border-light: #e5ecff;
+
+    /* Text */
+    --color-text: #ffffff;
+    --color-text-secondary: #cbd5f1;
+    --color-text-muted: #8998bf;
+
+    /* Accents */
+    --color-exp: #f1c75b;
+    --color-success: #63d471;
+    --color-danger: #ff6b6b;
+
+
+    /* ========================= */
+    /* TYPOGRAPHY                */
+    /* ========================= */
+
+    --font-rpg: "Pixel Operator", monospace;
+    --font-body: "IBM Plex Sans", sans-serif;
+
+    --font-size-small: 18px;
+    --font-size-body: 20px;
+
+    --font-size-rpg: 22px;
+    --font-size-rpg-large: 24px;
+    --font-size-rpg-title: 28px;
+
+
+    /* ========================= */
+    /* LAYOUT                    */
+    /* ========================= */
+
+    --sidebar-width: 300px;
+
+    @media (max-width: 1300px) {
+        
+        --sidebar-width: 250px;
+        
+    }
+
+
+    /* ========================= */
+    /* RPG WINDOWS               */
+    /* ========================= */
+
+    --window-border-width: 4px;
+    --window-border-radius: 6px;
+
+    --window-border-light: var(--color-border-light);
+    --window-border-dark: var(--color-border-dark);
+
+    --window-shadow: inset 0 0 0 2px var(--window-border-dark),
+    3px 3px 0 rgba(0, 0, 0, 0.45);
+
+    --window-background: radial-gradient(circle at top left,
+        var(--color-window-light) 0%,
+        var(--color-window) 40%,
+        var(--color-window-dark) 100%);
+
+    /* ========================= */
+    /* POINTER                   */
+    /* ========================= */
+
+    --rpg-pointer: url("../assets/FF7_pointer.png");
+    --rpg-pointer-width: 28px;
+    --rpg-pointer-height: 22px;
+}

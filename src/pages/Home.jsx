@@ -1,0 +1,119 @@
+import "./Home.css";
+import projects from "../data/project";
+
+import RPGWindow from "../components/ui/RPGWindows";
+
+function Home({ setCurrentPage }) {
+
+    const featuredProject = projects[0];
+    return (
+
+
+        <div className="home">
+
+            <section className="rpg-panel home__hero">
+
+
+                <h1 className="home__name">
+                    Corentin Courtine
+                </h1>
+
+                <h2 className="home__job">
+                    Développeur Web Full Stack
+                </h2>
+
+                <p className="home__introduction">
+                    Développeur Full Stack en formation à Web@cademie by Epitech, spécialisé dans le développement d'applications web avec React.js, Laravel, PHP et MySQL. Expérience dans la conception d'API REST, le développement Front-End et Back-End, ainsi que l'intégration de pipelines CI/CD. Habitué au travail en équipe, à la résolution de problèmes et aux méthodologies de développement collaboratif.
+                </p>
+
+                <div className="home__buttons">
+
+                    <button className="rpg-button home__action"
+                        onClick={() =>
+                            setCurrentPage("projects")
+                        }
+                    >
+                        Voir mes projets
+                    </button>
+
+                    <button className="rpg-button home__action"
+                        onClick={() =>
+                            setCurrentPage("contact")
+                        }
+                    >
+                        Me contacter
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <div className="home__grid">
+
+                <RPGWindow title="Spécialisations">
+
+                    <div className="home__specializations">
+
+                        <div className="home__specialization">
+                            <span>Frontend</span>
+                            <strong>React</strong>
+                        </div>
+
+                        <div className="home__specialization">
+                            <span>Backend</span>
+                            <strong>Symfony</strong>
+                        </div>
+
+                        <div className="home__specialization">
+                            <span>Base de données</span>
+                            <strong>PostgreSQL</strong>
+                        </div>
+
+                        <div className="home__specialization">
+                            <span>DevOps</span>
+                            <strong>Docker</strong>
+                        </div>
+
+                    </div>
+
+                </RPGWindow>
+
+
+                <RPGWindow title="Projet à la une">
+
+                    <div className="home__featured-project">
+
+                        <h3>{featuredProject.title}</h3>
+
+                        <p>
+                            {featuredProject.shortDescription}
+                        </p>
+
+                        <div className="home__technologies">
+                            {featuredProject.technologies.map((technology) => <span key={technology} className="tech-item" >{technology}</span>)}
+                        </div>
+
+                        <button className="rpg-button home__action"
+                            onClick={() =>
+                                setCurrentPage("projects")
+                            }
+                        >
+                            Voir le projet
+                        </button>
+
+                    </div>
+
+                </RPGWindow>
+
+            </div>
+
+        </div>
+
+
+    );
+
+
+}
+
+export default Home;

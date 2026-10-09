@@ -1,0 +1,116 @@
+.skills {
+    width: 100%;
+}
+
+.skills__grid {
+    display: grid;
+     grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+
+    gap: 20px;
+}
+
+.skills__category {
+    padding: 8px;
+
+    
+}
+
+.skills__category-title {
+    margin: 0 0 15px;
+
+    color: #b8c4df;
+
+    font-family: var(--font-rpg);
+    font-size: 16px;
+    font-weight: normal;
+
+    text-transform: uppercase;
+}
+
+.skills__items {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-rpg);
+
+    gap: 6px;
+}
+
+.skills__item {
+    padding: 10px 12px;
+
+    background-color: #07143f;
+
+    border: 1px solid transparent;
+
+    color: #d8e2ff;
+}
+
+.skills__item:hover {
+    background-color: #182d6b;
+
+    border-color: #526aa8;
+}
+
+.skills__item::before {
+    content: "◆";
+
+    display: inline-block;
+
+    width: var(--rpg-pointer-width);
+    height: var(--rpg-pointer-height);
+
+    margin-right: 10px;
+
+    color: #8190b8;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.skills__item:hover::before {
+    content: "";
+
+    background: var(--rpg-pointer) center / contain no-repeat;
+}
+
+.skills__environment {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.skills__environment-title {
+    margin:
+        0
+        0
+        10px;
+
+    color: var(--color-text-muted);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+}
+
+.skills__environment-items {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.skills__environment-item {
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-rpg);
+}
+
+.skills > .rpg-window + .rpg-window {
+    margin-top: 20px;
+}
